@@ -10,6 +10,10 @@ gem 'haml-rails'
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git'
 gem 'recaptcha', '>= 0.3.1'
 
+#gem 'hoptoad_notifier'
+
+gem 'bson_ext'
+
 # Deploy with Capistrano
 # gem 'capistrano'
 
