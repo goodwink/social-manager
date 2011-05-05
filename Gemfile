@@ -9,6 +9,9 @@ gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 gem 'haml-rails'
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git'
 gem 'recaptcha', '>= 0.3.1'
+gem 'tweetstream'
+gem 'mongo', :git => 'git://github.com/mongodb/mongo-ruby-driver.git'
+gem 'json'
 
 #gem 'hoptoad_notifier'
 
