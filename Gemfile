@@ -12,6 +12,8 @@ gem 'recaptcha', '>= 0.3.1'
 gem 'tweetstream'
 gem 'mongo', :git => 'git://github.com/mongodb/mongo-ruby-driver.git'
 gem 'json'
+gem 'twitter'
+gem 'classifier', :git => 'git://github.com/goodwink/classifier.git'
 
 #gem 'hoptoad_notifier'
 
@@ -28,9 +30,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'faker'
   gem 'factory_girl'
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'cucumber-rails'
   gem 'autotest'
   gem 'autotest-rails'
 end

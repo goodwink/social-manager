@@ -1,15 +1,24 @@
 GIT
   remote: git://github.com/chriseppstein/compass.git
-  revision: 9b5d5b72a17d48bb28d50b074b995f6a93a8dd53
+  revision: f12e92601c906735866ac7b0ab1131c3a6a13396
   specs:
-    compass (0.11.1.9b5d5b7)
+    compass (0.11.1.f12e926)
       chunky_png (~> 1.1)
       fssm (>= 0.2.7)
       sass (~> 3.1)
 
 GIT
+  remote: git://github.com/goodwink/classifier.git
+  revision: b07021699ebee2bfc9458f420aa3e1bc2fe7d04b
+  specs:
+    classifier (1.4.3)
+      ruby-stemmer (>= 0.9.1)
+      sequel (~> 3.2)
+      sqlite3 (~> 1.3)
+
+GIT
   remote: git://github.com/mongodb/mongo-ruby-driver.git
-  revision: eef9abfbdfa972503279df885cbc050d9530643b
+  revision: cb54c6b295b80a1d14eabca02dfe97fa77930034
   specs:
     bson (1.3.0)
     bson_ext (1.3.0)
@@ -18,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: a12adaff0644e5ac060f89d16bc673cf917c3462
+  revision: 2f77710e6d56b430308c9d254596f2b1cdfe1965
   specs:
     mongoid (2.0.1)
       activemodel (~> 3.0)
@@ -27,13 +36,13 @@ GIT
 
 GIT
   remote: git://github.com/rack/rack.git
-  revision: 09433a26a9e6d3d8921432cf1fcafc871e543690
+  revision: c16729ddc2a0576818db2e8c20ca6550d9d2cdad
   specs:
     rack (1.3.0.beta)
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 030e1d06ca36e1ed235f8e34ac9bfb6906b12dce
+  revision: 3f36441e90d0930349186ca597c9884ff1d7fbdb
   specs:
     actionmailer (3.1.0.beta1)
       actionpack (= 3.1.0.beta1)
@@ -84,6 +93,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     ZenTest (4.5.0)
+    addressable (2.2.5)
     arel (2.1.0)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -91,60 +101,39 @@ GEM
       ZenTest
     bcrypt-ruby (2.1.4)
     builder (3.0.0)
-    capybara (0.4.1.2)
-      celerity (>= 0.7.9)
-      culerity (>= 0.2.4)
-      mime-types (>= 1.16)
-      nokogiri (>= 1.3.3)
-      rack (>= 1.0.0)
-      rack-test (>= 0.5.4)
-      selenium-webdriver (>= 0.0.27)
-      xpath (~> 0.1.3)
-    celerity (0.8.9)
-    childprocess (0.1.8)
-      ffi (~> 1.0.6)
-    chunky_png (1.1.1)
-    cucumber (0.10.2)
-      builder (>= 2.1.2)
-      diff-lcs (>= 1.1.2)
-      gherkin (>= 2.3.5)
-      json (>= 1.4.6)
-      term-ansicolor (>= 1.0.5)
-    cucumber-rails (0.4.1)
-      cucumber (>= 0.10.1)
-      nokogiri (>= 1.4.4)
-      rack-test (>= 0.5.7)
-    culerity (0.2.15)
+    chunky_png (1.2.0)
     daemons (1.1.3)
-    database_cleaner (0.6.7)
     diff-lcs (1.1.2)
     erubis (2.7.0)
     eventmachine (0.12.10)
     factory_girl (1.3.3)
     faker (0.9.5)
       i18n (~> 0.4)
-    ffi (1.0.7)
-      rake (>= 0.8.7)
+    faraday (0.6.1)
+      addressable (~> 2.2.4)
+      multipart-post (~> 1.1.0)
+      rack (>= 1.1.0, < 2)
+    faraday_middleware (0.6.3)
+      faraday (~> 0.6.0)
     fssm (0.2.7)
-    gherkin (2.3.7)
-      json (>= 1.4.6)
     haml (3.1.1)
     haml-rails (0.3.4)
       actionpack (~> 3.0)
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
+    hashie (1.0.0)
     hike (1.0.0)
     i18n (0.6.0beta1)
     json (1.5.1)
-    json_pure (1.5.1)
     mail (2.3.0)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
     multi_json (1.0.1)
-    nokogiri (1.4.4)
+    multi_xml (0.2.2)
+    multipart-post (1.1.0)
     polyglot (0.3.1)
     rack-cache (1.0.1)
       rack (>= 0.4)
@@ -155,6 +144,8 @@ GEM
     rack-test (0.6.0)
       rack (>= 1.0)
     rake (0.8.7)
+    rash (0.3.0)
+      hashie (~> 1.0.0)
     recaptcha (0.3.1)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
@@ -169,14 +160,10 @@ GEM
       activesupport (~> 3.0)
       railties (~> 3.0)
       rspec (~> 2.5.0)
-    rubyzip (0.9.4)
+    ruby-stemmer (0.9.1)
     sass (3.1.1)
-    selenium-webdriver (0.2.0)
-      childprocess (>= 0.1.7)
-      ffi (>= 1.0.7)
-      json_pure
-      rubyzip
-    simple_oauth (0.1.4)
+    sequel (3.23.0)
+    simple_oauth (0.1.5)
     sprockets (2.0.0.beta.2)
       hike (~> 1.0)
       rack (~> 1.0)
@@ -184,7 +171,6 @@ GEM
     sqlite3 (1.3.3)
     sqlite3-ruby (1.3.3)
       sqlite3 (>= 1.3.3)
-    term-ansicolor (1.0.5)
     thor (0.14.6)
     tilt (1.3)
     treetop (1.4.9)
@@ -192,12 +178,18 @@ GEM
     tweetstream (1.0.4)
       daemons
       twitter-stream
+    twitter (1.4.1)
+      faraday (~> 0.6.1)
+      faraday_middleware (~> 0.6.3)
+      hashie (~> 1.0.0)
+      multi_json (~> 1.0.0)
+      multi_xml (~> 0.2.0)
+      rash (~> 0.3.0)
+      simple_oauth (~> 0.1.4)
     twitter-stream (0.1.13)
       eventmachine (~> 0.12.8)
       simple_oauth (~> 0.1.4)
     tzinfo (0.3.27)
-    xpath (0.1.4)
-      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
@@ -206,10 +198,8 @@ DEPENDENCIES
   autotest
   autotest-rails
   bson_ext
-  capybara
+  classifier!
   compass!
-  cucumber-rails
-  database_cleaner
   factory_girl
   faker
   haml-rails
@@ -224,3 +214,4 @@ DEPENDENCIES
   sqlite3
   sqlite3-ruby
   tweetstream
+  twitter
