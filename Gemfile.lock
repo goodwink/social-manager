@@ -1,15 +1,15 @@
 GIT
   remote: git://github.com/chriseppstein/compass.git
-  revision: f12e92601c906735866ac7b0ab1131c3a6a13396
+  revision: c83432d1c0c5b0ce0090cacbaf64e296bb272fd4
   specs:
-    compass (0.11.1.f12e926)
+    compass (0.11.1.c83432d)
       chunky_png (~> 1.1)
       fssm (>= 0.2.7)
       sass (~> 3.1)
 
 GIT
   remote: git://github.com/goodwink/classifier.git
-  revision: b07021699ebee2bfc9458f420aa3e1bc2fe7d04b
+  revision: 571834d3d70e3207ef39a34042cfb27f20d7d880
   specs:
     classifier (1.4.3)
       ruby-stemmer (>= 0.9.1)
@@ -18,16 +18,16 @@ GIT
 
 GIT
   remote: git://github.com/mongodb/mongo-ruby-driver.git
-  revision: cb54c6b295b80a1d14eabca02dfe97fa77930034
+  revision: 98abe355fa19a0dbae3c908546eaad503a068c53
   specs:
-    bson (1.3.0)
-    bson_ext (1.3.0)
-    mongo (1.3.0)
-      bson (>= 1.3.0)
+    bson (1.3.1)
+    bson_ext (1.3.1)
+    mongo (1.3.1)
+      bson (>= 1.3.1)
 
 GIT
   remote: git://github.com/mongoid/mongoid.git
-  revision: 2f77710e6d56b430308c9d254596f2b1cdfe1965
+  revision: c7c3e49609464b967e343cdfdf611476a5156c0c
   specs:
     mongoid (2.0.1)
       activemodel (~> 3.0)
@@ -42,7 +42,7 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 3f36441e90d0930349186ca597c9884ff1d7fbdb
+  revision: b89f269957e8e0e587d855dd5db49a2f23bc9e02
   specs:
     actionmailer (3.1.0.beta1)
       actionpack (= 3.1.0.beta1)
@@ -102,17 +102,23 @@ GEM
     bcrypt-ruby (2.1.4)
     builder (3.0.0)
     chunky_png (1.2.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.1.0)
     daemons (1.1.3)
     diff-lcs (1.1.2)
     erubis (2.7.0)
     eventmachine (0.12.10)
+    execjs (0.3.3)
+      multi_json (~> 1.0)
     factory_girl (1.3.3)
     faker (0.9.5)
       i18n (~> 0.4)
     faraday (0.6.1)
       addressable (~> 2.2.4)
       multipart-post (~> 1.1.0)
-      rack (>= 1.1.0, < 2)
+      rack (< 2, >= 1.1.0)
     faraday_middleware (0.6.3)
       faraday (~> 0.6.0)
     fssm (0.2.7)
@@ -197,8 +203,9 @@ PLATFORMS
 DEPENDENCIES
   autotest
   autotest-rails
-  bson_ext
+  bson_ext (>= 1.3.1)
   classifier!
+  coffee-script
   compass!
   factory_girl
   faker
@@ -211,6 +218,7 @@ DEPENDENCIES
   recaptcha (>= 0.3.1)
   rspec
   rspec-rails
+  sass
   sqlite3
   sqlite3-ruby
   tweetstream

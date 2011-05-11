@@ -5,6 +5,7 @@ gem 'rack', :git => 'git://github.com/rack/rack.git'
 
 gem 'sqlite3'
 
+gem 'bson_ext', '>= 1.3.1'
 gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 gem 'haml-rails'
 gem 'compass', :git => 'git://github.com/chriseppstein/compass.git'
@@ -14,10 +15,10 @@ gem 'mongo', :git => 'git://github.com/mongodb/mongo-ruby-driver.git'
 gem 'json'
 gem 'twitter'
 gem 'classifier', :git => 'git://github.com/goodwink/classifier.git'
+gem 'coffee-script'
+gem 'sass'
 
 #gem 'hoptoad_notifier'
-
-gem 'bson_ext'
 
 # Deploy with Capistrano
 # gem 'capistrano'
