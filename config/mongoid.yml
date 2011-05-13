@@ -1,10 +1,10 @@
 development:
   host: localhost
-  database: social_manager_development
+  database: social-manager
 
 test:
   host: localhost
-  database: social_manager_test
+  database: social-manager-test
 
 # set these environment variables on your prod server
 production:

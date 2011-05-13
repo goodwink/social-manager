@@ -21,7 +21,7 @@ stream.on_error do |message|
 end
 
 stream.on_delete do |status_id, user_id|
-  tweets.remove('_id' => status_id)
+  tweets.remove('tweet_id' => status_id)
 end
 
 stream.track("hootsuite", "sproutsocial") do |status|
@@ -29,7 +29,7 @@ stream.track("hootsuite", "sproutsocial") do |status|
   puts status.to_s + "\r\n"
   
   tweet = {
-    "_id" => status.id,
+    "tweet_id" => status.id,
     "created_at" => Time.parse(status.created_at),
     "text" => status.text,
     "geo" => status.geo,
