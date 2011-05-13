@@ -17,6 +17,7 @@ gem 'twitter'
 gem 'classifier', :git => 'git://github.com/goodwink/classifier.git'
 gem 'coffee-script'
 gem 'sass'
+#gem 'gsl'
 
 #gem 'hoptoad_notifier'
 

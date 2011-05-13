@@ -1,4 +1,12 @@
 SocialManager::Application.routes.draw do
+  resources :campaigns
+
+  resources :users
+
+  resources :tasks
+
+  resources :customers
+
   resources :tweets
 
   # The priority is based upon order of creation:
